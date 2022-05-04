@@ -1,0 +1,54 @@
+
+README FILE:
+
+objective:
+	The objective of this project is to create a program that maintains the wage information for the employees in a company. The program must let you add employees, compute the pay check, raise wages, print records, download records from a binary file, upload date to a file. 
+Methods
+-	Compute pay check (double)
+		+ will need to convert Salary wage to hourly
+-	Convert paycheck (double)
+		+ will need to be by week, 
+		+ hourly will be based on hour
+		+ salary will been to be convert to weekly it is not based on the number of hours
+-	Main menu (void)
+		+ user input
+		+ layout
+o	Checks inputs for n c r p d u or q 
+		+ char == Char or char != char
+o	Anything else asks them to try again
+		+either try again, 
+		+ if or catch stament
+o	Hit enter to return to home screen
+-	Pulls file (void)
+		+ File stream
+		+ save to arraylist
+-	Displays file (void)
+		+for loop, and the tostrings
+-	New employee (void)
+		+ user input
+		+adds name, wage, and type (hourly or 
+o	Checks input for h or s
+		+ goes to add to array method, and based on the type adds to a specific arraylist of objects
+-	Save to file (void)
+		+very simliar to the pull file
+		+file stream out
+Classes 
+-	Employee (abstract) -all must be serliaizable
+		+no constuctor
+		+getters, and setter
+		+ computepay - abstract
+o	Hourly (extends)
+		+constructor
+		+toString
+o	Salaried (extends)
+		+ constructor
+		+getter and setter
+		+compute pay
+		+ toString
+o	Type of employee is based on user input. 
+
+Side note
+- 	Will use DecimalFormat to formate the wages to have two decimal places on display.
+
+After:
+I know in my typescript it states that there a miss click please ignore.  

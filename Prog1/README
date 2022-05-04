@@ -1,0 +1,17 @@
+
+
+Program 1
+Description: 
+
+	Code the popular game Bingo into a one player game , using an input file. 
+
+Algorithm Break down:
+
+Main method
+-input from file and fills up 5*5 matrixs
+-Prints the card (nested for loop)
+-While a bingo is not Found
+	-Use bitset to make sure for a unique pick
+	-Check for a bingo
+	-picks a random number 
+		-zeros out the number picked if on a card.

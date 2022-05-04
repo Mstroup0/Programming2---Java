@@ -1,0 +1,111 @@
+REMEAD File
+Purposes of the Project:
+To familiarize myself with the Queue ADT, Pointers, and linked Lists
+Descriptions on the Project:
+	To Write code to simulate a computers system, and the jobs sub mitted for execution.
+Classes & Methods
+-	Queue class  (must be circular linked list)
+o	Variables
+	lastNode (Private Node)
+o	Constructor (given)
+o	Enqueue (given)
+o	Dequeue
+o	Front (given)
+o	Clone (given)
+o	Peek(given)
+-	Job Class
+o	Variables
+	Job name (String)
+	arrivalTime (int)
+	startTime(int)
+	runtime(int)
+	waitTime(int)  Difference between startTime and arrivalTime
+	turnaroundTime(int)  Difference between arrivalTime and FinishTime
+o	2 constructors (given)
+	One All variables set to zero
+	One where it brings in values
+o	toString(given)
+o	Getter methods
+	For all variables
+o	Setter methods for only
+	waitTime
+	turnaroundTime
+	startTime
+-	Time Share Class
+o	Gobal Variables
+	Clock
+	Idle
+	Usage counter
+o	Main Method
+	Varaibles
+	Queue input
+	String = the arg[0]
+	Takes the command line argument which should be a file name, and inputs it input the input  method
+	Call the  input method and process method
+o	Print method
+	Clones the Queue for use.  *2
+	Variables
+	Decimalformat *2
+	Cpu Uage (double)
+	avg Wait Time (double)
+	cpu idle (double)
+	cpu usage(%) (Double)
+	sumWait (double)
+	Prints all the jobs
+	Calculates the Following
+	Average Wait Time
+o	Sum of a the wait time / by the num of jobs
+	CPU Usage
+o	counter
+	CPU Idle
+o	Clock  wait - counter
+	CPU Usage (%)
+o	(
+	Prints the following
+	Average Wait Time
+	CPU Usage
+	CPU Idle
+	CPU Usage (%)
+o	Input method
+	Takes the file
+	Input values into a Queue
+	Then into the job Class
+	Returns num of jobs
+o	Process method
+	Clones of the Queue for use the input
+	Variables
+	Queue for jobs
+	Queue for finished jobs
+	Wait (int)
+	Turn(int)
+	While both Queue and job or input Queue are not empty
+	If (input queue is not empty)
+o	If (arrival time  == clock)
+	Add input queue to job queue
+	Remove item from input queue
+	If ( Job queue is not empty)
+o	If (Runtime == (clock  arrival time)
+	Set turnaround time
+	Set Start time
+o	If (arrival < clock && the start time == -1 )
+	Set start time
+	Set wait Time
+	If wait for some reason the wait time is 1 when it shouldn’t set to 0;
+	Calculations
+	Usage is equal to the sum of the runtime of the jobs.
+	Idle which is equal to the clock  usage counter  the sum of the wait
+	Print method at end of this method
+
+
+My file input
+Job1	01	03
+Job2	04	02
+Job3	10	05
+Job4	16	04
+Job5	21	06
+
+Calculations
+Average wait time => 0
+CPU usage => 20
+CPU idle => 8
+CPU usage(%) => 71.43%

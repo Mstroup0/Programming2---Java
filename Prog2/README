@@ -1,0 +1,92 @@
+
+Problem Descriptions
+----------------------------
+The problem at is creating a library catalog that is sorted and will allow adding of books and find a specific book based on the name. 
+
+Input example
+Harry Potter and The Cursed Child. 
+J.k. Rowling
+Copyright
+9.99
+f
+
+Output example
+Title : Harry Potter and the Cursed Child
+Author: J.K. Rowling
+Copyright:
+Price: $9.99
+Genre: Fantasy
+
+
+Program Specification 
+---------------------------
+The program must contain the following:
+-	Array with multiple elements. 
+-	Must be able to sort the array by title
+-	Must be able to add a new item 
+-	Display all the element
+-	Can find an element
+
+
+Program Algorithm 
+--------------------------
+Main class
+-	Goes throw all the files and looks for files with .dat
+-	Brings them in 
+-	Adds them to the book array
+-	Calls the main menu
+
+Main Menu
+-	Asks for input based on menu options
+-	As exceptions for wrong inputs
+-	 Calls the sort, the find, the add(by user), and both prints	 
+
+Sort Method
+-	Sorts the Array alphabetically
+-	Sorts by Selection Sort
+-	Sort by title
+
+Find Method
+-	Ask for user input
+-	Finds by title
+-	Uses a linear search to find the inputed key
+
+Add Method (by File)
+-	 Add the file line by line 
+-	Using ; as the break between each elements
+-	Input each into their own variable
+-	Then add to an array list of the type LibraryBook
+
+Add Method (By user)
+-	Input for title, author, copyright, price, and genre
+-	Adds to arraylist
+
+PrintRecord Method
+-	Displays the record at a specific point
+-	Calls each element at the same location
+
+Print all method
+-	 Us the print record method in a for loop 
+-	Displays all
+
+Clears screen
+-	 Clears the screen
+
+Class for book
+-	Title – string
+-	Author – string 
+-	Copyright – int
+-	Price – double
+-	Gerne – string
+-	
+
+
+
+
+
+
+
+
+
+
+

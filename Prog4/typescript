@@ -1,0 +1,33 @@
+Script started on Wed 04 Dec 2019 12:08:17 PM EST
+]0;stroup_ma@cobra:~/Prog4[?1034h[stroup_ma@cobra Prog4]$ javac[K[K[K[K[Kls
+Driver.java  Job.java   jobs2.dat    jobscp2.dat  Node.class  Queue.class           QueueException.java   QueueInterface.java  README           TimeShare.java
+Job.class    jobs1.dat  jobscp1.dat  myJobs.dat   Node.java   QueueException.class  QueueInterface.class  Queue.java           TimeShare.class  typescript
+]0;stroup_ma@cobra:~/Prog4[stroup_ma@cobra Prog4]$ sc[K[Kjavac TimeShare.java
+]0;stroup_ma@cobra:~/Prog4[stroup_ma@cobra Prog4]$ java TimeShare.[K jon[Kbs1.dat
+Job Control Analysis: Summary Report
+Job id	Arrival Time	Run Time	Wait Time	Turn around Time
+----------------------------------------------------------------------------------------------------------------
+job1	1	1	3	0	3
+job2	2	4	2	2	2
+job3	10	10	5	0	5
+Average Wait Time => 0.67
+CPU usage => 10.00
+CPU idle => 4.00
+CPU usage (%) => 71.43%
+]0;stroup_ma@cobra:~/Prog4[stroup_ma@cobra Prog4]$ java TimeShare jobs1.dat[C[1P.dat[1P.dat[1P.dat[1P.dat[1P.datm.daty.datJ.dato.datb.dats.dat
+Job Control Analysis: Summary Report
+Job id	Arrival Time	Run Time	Wait Time	Turn around Time
+----------------------------------------------------------------------------------------------------------------
+Job1	1	1	3	0	3
+Job2	4	4	2	0	2
+Job3	10	10	5	0	5
+Job4	16	16	4	0	4
+Job5	21	21	6	0	6
+Average Wait Time => 0
+CPU usage => 20.00
+CPU idle => 8.00
+CPU usage (%) => 71.43%
+]0;stroup_ma@cobra:~/Prog4[stroup_ma@cobra Prog4]$ exit
+exit
+
+Script done on Wed 04 Dec 2019 12:09:43 PM EST
